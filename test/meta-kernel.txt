@@ -1,0 +1,12 @@
+\begintext
+
+An example meta-kernel file.
+
+\begindata
+
+PATH_VALUES = ('data')
+PATH_SYMBOLS = ('A')
+KERNELS_TO_LOAD = ('$A/naif0011.tls',
+                   '$A/de421.bsp',
+                   '$A/moon_080317.tf',
+                   '$A/moon_pa_de421_1900_2050.bpc')

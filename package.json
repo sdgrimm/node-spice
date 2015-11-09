@@ -1,0 +1,13 @@
+{
+  "name": "node-spice",
+  "version": "0.1.0",
+  "description": "Node bindings for SPICE.",
+  "author": {
+    "name": "Shane D. Grimm",
+    "email": "shane.d.grimm@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "nan": "^2.1.0"
+  }
+}

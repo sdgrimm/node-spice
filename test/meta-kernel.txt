@@ -8,5 +8,9 @@ PATH_VALUES = ('data')
 PATH_SYMBOLS = ('A')
 KERNELS_TO_LOAD = ('$A/naif0011.tls',
                    '$A/de421.bsp',
+                   '$A/lrorg_2015074_2015166_v01.bsp',
                    '$A/moon_080317.tf',
+                   '$A/earth_assoc_itrf93.tf',
+                   '$A/pck00010.tpc',
+                   '$A/earth_latest_high_prec.bpc',
                    '$A/moon_pa_de421_1900_2050.bpc')

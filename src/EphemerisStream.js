@@ -41,7 +41,10 @@ EphemerisStream.prototype._read = function() {
         var epoch = new Date(this._start + t).toJSON().replace(/Z$/, '');
         try {
             var data = cspice.spkezr(this._observer, this._target, epoch, this._frame);
-            data.unshift(t);
+            for (var i=0; i<data.length; i++) {
+                data[i] *= 1000.0;
+            }
+            data.unshift(t / 1000.0);
             this.push(data);
         }
         catch (ex) {
@@ -54,6 +57,5 @@ EphemerisStream.prototype._read = function() {
     }
 };
 
-module.exports = function(options) {
-    return new EphemerisStream(options);
-};
+module.exports = EphemerisStream;
+
